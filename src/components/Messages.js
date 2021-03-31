@@ -7,7 +7,7 @@ const Expense = ({expense, expenseNumber}) => (
 )
 
 const Expenses = ({expenses}) => (
-  <div class="expenses">
+  <div className="expenses">
     <p>The first expense's amount is { expenses[0]?.amount }</p>
     { expenses.map( (expense, i) => <Expense expense={expense} />) }
   </div>
